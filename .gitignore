@@ -1,0 +1,48 @@
+# Default .gitignore for Sandro's project scaffolds.
+# Copied verbatim by /init into new project repos.
+
+# Environment - never commit secrets, keep .env.example tracked.
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+dist/
+build/
+.cache/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project
+tmp/
+zArchives/
+
+# cobtask lifecycle phase marker (CCC-0114; regenerated, never committed)
+.cobtask-workflow-phase
+
+# Per-project test inputs and outputs are user-curated and may contain
+# sensitive material. Keep only the projects/ scaffold tracked.
+/projects/*/
+!/projects/.gitkeep
+
+.worktrees
